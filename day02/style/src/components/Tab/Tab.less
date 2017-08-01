@@ -1,0 +1,22 @@
+@size:200px;
+:local(.tab){
+  button{
+    &.active{
+      background-color: yellow;
+    }
+  }
+  div{
+    width: @size;
+    height: @size;
+    background-color: #ccc;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+:local(.a){
+  .green{
+    color: green;
+  }
+}
